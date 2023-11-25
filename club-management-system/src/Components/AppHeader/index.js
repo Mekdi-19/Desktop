@@ -6,7 +6,7 @@ function AppHeader() {
     return (
       <div className="AppHeader">
          
-         <Typography.Title>club members management </Typography.Title>
+         <Typography.Title >club members management </Typography.Title>
          <Space>
             <Badge count={10} dot>
             <MailOutlined
