@@ -5,9 +5,9 @@ import {
  
    
 } from "@ant-design/icons";
-import { FaAppStore, FaCalendarCheck, FaEvernote, FaInbox, FaUser } from "react-icons/fa";
+import { FaAppStore, FaCalendarCheck,   FaInbox, FaUser } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
-import Item from "antd/es/list/Item";
+
 function SideMenu() {
   const navigate = useNavigate()
     return (

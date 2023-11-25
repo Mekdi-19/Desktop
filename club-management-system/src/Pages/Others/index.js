@@ -3,7 +3,8 @@ import { Typography } from "antd";
 function Others() {
     return (
       <div className="Others">
-    <Typography.Text level={4}>others</Typography.Text>
+        <Typography.Title level={3} >others</Typography.Title>
+    <Typography.Text  >others</Typography.Text>
       </div>
     );
   }
