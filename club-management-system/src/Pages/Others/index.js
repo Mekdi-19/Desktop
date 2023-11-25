@@ -1,8 +1,9 @@
 import React from "react";
+import { Typography } from "antd";
 function Others() {
     return (
       <div className="Others">
-    <Typography.Text>others</Typography.Text>
+    <Typography.Text level={4}>others</Typography.Text>
       </div>
     );
   }

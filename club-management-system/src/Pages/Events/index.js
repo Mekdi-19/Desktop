@@ -1,8 +1,9 @@
 import React from "react";
+import { Typography } from "antd";
 function Events() {
     return (
       <div className="Events">
-       <Typography.Text>Events</Typography.Text>
+       <Typography.Text level={4} >Events</Typography.Text>
       </div>
     );
   }

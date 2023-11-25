@@ -1,9 +1,12 @@
 import React from "react";
+import AppRoutes from "../AppRoutes";
+
 function PageContent() {
     return (
       <div className="PageContent">
-       PageContent
+         <AppRoutes/>
       </div>
+       
     );
   }
   export default PageContent;
