@@ -1,42 +1,35 @@
-import express from 'express';
-import mysql from 'mysql';
-import cors from 'cors';
-import jwt from 'jsonwebtoken';
-import bcrypt, { hash } from 'bcrypt';
-import cookieParser from 'cookie-parser';
-const salt = 10;
-
-const app = express();
-app.use(express.json());
-app.use(cors());
-app.use(cookieParser());
-
+const express = require('express');
+const mysql = require('mysql')
+const cors = require('cors')
+const app = express()
+app.use(cors())
 const db = mysql.createConnection({
-  host: "localhost",
-  user: "root",
-  password: "",
-  database: "loginpage"
-});
-app.post('/singup',(req,res)=>{
-  const sql="INSERT INTO login ('name ','email','password','id','phone') VALUES(?)";
-  bcrypt.hash(req.body.password.toString(),salt,(err,hash)=>{
-    if(err) return res.json({Error:"error for hosting password"});
-    const value =[
-      req.body.name,
-      req.body.email,
-      hash,
-      req.body.id,
-      req.body.phone
-    ]
-    db.query(sql,[value],(err,result)=>{
-      if (err) return res.json({Error:'inserting data error in server '});
-      return res.json({Status:'success'});
-
-    })
-
-  })
-
+    host: "localhost",
+    user:'root',
+    password:'',
+    database:'loginpage'
 })
-app.listen(8082),()=>{
-    console.log("Server is running on port 8083");
-}
+app.post('/',(re,res)=>{
+  const sql = "SELECT *FROM login WHERE username =? AND password =?";
+  const values =[
+    req.body.email,
+    req.body.password
+  ]
+  db.query(sql, [values],(err,data)=>{
+    if(err)return res.json('login faild');
+    else return res.json(data);
+  })
+})
+app.post('/login', (req, res) => {
+    const sql = "SELECT * FROM login";
+    
+    });
+   
+
+  
+
+app.listen(8082, ()=> {
+    console.log("server is running on the port")
+
+
+});
