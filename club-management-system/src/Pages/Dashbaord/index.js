@@ -56,7 +56,7 @@ import { BarChart, Bar, Cell, XAxis, YAxis, CartesianGrid, Tooltip, Legend, Resp
       <h3>DASHBOARD</h3>
       </div>
       
-      members Dashbaord
+       members Dashbaord
        
         <div className='main-cards'>
           <div className='card'>
@@ -64,7 +64,7 @@ import { BarChart, Bar, Cell, XAxis, YAxis, CartesianGrid, Tooltip, Legend, Resp
               <h3>members</h3>
               <BsPeopleFill className='card_icon' />
             </div>
-            <h1>18 active members</h1>
+            <h1>20 active members</h1>
           </div>
           <div className='card'>
             <div className='card-inner'>
@@ -72,21 +72,21 @@ import { BarChart, Bar, Cell, XAxis, YAxis, CartesianGrid, Tooltip, Legend, Resp
               <BsFillGrid3X3GapFill className='card_icon' />
               
             </div>
-            <h1>12</h1>
+            <h1>4 events in this year</h1>
           </div>
           <div className='card'>
             <div className='card-inner'>
-              <h3>add members</h3>
+              <h3>  projects </h3>
               <BsPeopleFill className='card_icon' />
             </div>
-            <h1>33</h1>
+            <h1>13 active project in this year</h1>
           </div>
           <div className='card'>
             <div className='card-inner'>
-              <h3>ALERTS</h3>
+              <h3>Important news</h3>
               <BsFillBellFill className='card_icon' />
             </div>
-            <h1>42</h1>
+            <h1>12</h1>
           </div>
         </div>
       

@@ -10,10 +10,12 @@ export const Table = ({ rows, deleteRow, editRow }) => {
       <table className="table">
         <thead>
           <tr>
-            <th>Page</th>
+            <th>personal info</th>
             <th className="expand">Description</th>
             <th>Status</th>
             <th>Actions</th>
+          
+            <th></th>
           </tr>
         </thead>
         <tbody>

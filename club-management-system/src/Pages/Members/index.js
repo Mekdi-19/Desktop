@@ -4,25 +4,46 @@ import "./member.css"
 import { Table } from "./Table";
 import { Modal } from "./Modal";
 import { useState } from "react";
-import {   FaUser } from "react-icons/fa";
+import { FaUser } from "react-icons/fa";
  
 function Members() {
   const [modalOpen, setModalOpen] = useState(false);
   const [rows, setRows] = useState([
     {
-      page: "Home",
-      description: "This is the main page of the website",
-      status: "live",
+      page: "name",
+      description: "Abebe Kebede",
+      status: "/",
+       
+    },
+     {
+      page: "ID number",
+      description: "ugr/6766776767",
+      status: "/",
+      
     },
     {
-      page: "About Us",
-      description: "This page has details about the company",
-      status: "draft",
+      page: "phone number",
+      description: "091234567",
+      status: " /",
+       
     },
     {
-      page: "Pricing",
-      description: "Prices for different subscriptions",
-      status: "error",
+      page: "projects i am working",
+      description: " website developemnt",
+      status: "active",
+     
+    },
+    {
+      page: "project",
+      description: "i will start doing this project",
+      status: "inprogerss",
+       
+    },
+    {
+      page: "Project ",
+      description: "the project i am not pareticpating",
+      status: "unactive",
+       
     },
   ]);
   const [rowToEdit, setRowToEdit] = useState(null);
@@ -50,7 +71,7 @@ function Members() {
   };
     return (
       <div className="Memebers">
-        <Typography.Title level={8} ><FaUser/><> </>Personal data</Typography.Title>
+        <Typography.Title level={8} ><FaUser/><> </> Personal data  <h4>you can make change into your data</h4></Typography.Title>
         <Table rows={rows} deleteRow={handleDeleteRow} editRow={handleEditRow} />
       <button onClick={() => setModalOpen(true)} className="btn">
         Add

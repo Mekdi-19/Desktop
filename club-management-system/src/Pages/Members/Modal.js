@@ -52,17 +52,19 @@ export const Modal = ({ closeModal, onSubmit, defaultValue }) => {
       <div className="modal">
         <form>
           <div className="form-group">
-            <label htmlFor="page">Page</label>
+            <label htmlFor="page"> add personal info</label>
             <input name="page" onChange={handleChange} value={formState.page} />
           </div>
           <div className="form-group">
-            <label htmlFor="description">Description</label>
+            <label htmlFor="description"> add Description</label>
             <textarea
               name="description"
               onChange={handleChange}
               value={formState.description}
             />
           </div>
+          
+         
           <div className="form-group">
             <label htmlFor="status">Status</label>
             <select
@@ -70,9 +72,9 @@ export const Modal = ({ closeModal, onSubmit, defaultValue }) => {
               onChange={handleChange}
               value={formState.status}
             >
-              <option value="live">Live</option>
-              <option value="draft">Draft</option>
-              <option value="error">Error</option>
+              <option value="live">active</option>
+              <option value="draft">inprogerss</option>
+              <option value="error">unactive</option>
             </select>
           </div>
           {errors && <div className="error">{`Please include: ${errors}`}</div>}

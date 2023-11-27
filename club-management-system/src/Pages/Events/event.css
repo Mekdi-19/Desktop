@@ -32,8 +32,8 @@ body {
    }
    
    .event-page-card-image img {
-    width: 75%;
-    height: auto;
+    width: 100%;
+    height: 100%;
     object-fit: cover;
    }
    
