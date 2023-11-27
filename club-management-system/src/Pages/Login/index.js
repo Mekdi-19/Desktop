@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './login.css'; 
+import axios from 'axios';
 
 function Login() {
   const [username, setUsername] = useState('');
@@ -9,6 +10,9 @@ function Login() {
 
   const handleLogin = () => {
     // Perform login logic here, e.g., sending login request to the server
+     axios.post('http://localhost:8082/login' ,{username,password})
+      .then(res => console.log(res))
+      .catch(err =>console.log(err));
 
     // Assuming login is successful, navigate to the dashboard
     navigate('/dashboard');
