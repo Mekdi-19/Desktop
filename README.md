@@ -1,4 +1,5 @@
 # Desktop
+ 
 Club Management System
 The Club Management System is a comprehensive platform designed for both members and administrators. It features a dashboard that provides an overview of the club's activities, including key metrics, events, notifications, and project statistics. Members can also edit their profiles and access information about upcoming club events.
 
@@ -24,4 +25,4 @@ Fork the repository and create a new branch for your contribution.
 Make your changes and submit a pull request.
 Ensure that your code follows the project's coding conventions and guidelines.
 Testing
-The Club Management System includes a suite of tests. To run the tests, use the following command: npm start
+ 
